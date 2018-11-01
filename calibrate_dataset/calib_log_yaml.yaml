@@ -1,0 +1,44 @@
+success_calib_cnt: 1
+calib_cnt: 2
+calib_0:
+  timestamp: 2018-10-23-17-35-40
+  successful: true
+  all_meas_cnt: 361
+  valid_meas_cnt: 12
+  all_segment_cnt: 20
+  valid_segment_cnt: 18
+  final_cost: 0.01425714915647011
+  average_final_cost: 0.001188095763039176
+  this_align_error: 0.1869579641342754
+  default_align_error: 1.273892195120566
+  previous_align_error: 1.273892195120566
+  est_parameter:
+    left: 0.1017289155892555
+    right: 0.1018459620066831
+  uncertaity: 0.003135280249253472
+  prev_est_parameter:
+    left: 0.1
+    right: 0.1
+  prev_uncertaity: 0.02
+  comments: "[Success]"
+calib_1:
+  timestamp: 2018-10-23-17-37-34
+  successful: false
+  all_meas_cnt: 2081
+  valid_meas_cnt: 90
+  all_segment_cnt: 21
+  valid_segment_cnt: 14
+  final_cost: 0.07067057726559002
+  average_final_cost: 0.0007852286362843336
+  this_align_error: 1.505139663933787
+  default_align_error: 0
+  previous_align_error: 0
+  est_parameter:
+    left: 0.09475416291587038
+    right: 0.0952845510736723
+  uncertaity: 0.01585343193304388
+  prev_est_parameter:
+    left: 0.1017289155892555
+    right: 0.1018459620066831
+  prev_uncertaity: 0.003135280249253472
+  comments: "[Fail] Do Not get satisfied calibrate result for solver."

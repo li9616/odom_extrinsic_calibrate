@@ -1,0 +1,170 @@
+success_calib_cnt: 1
+total_calib_cnt: 8
+calib_0:
+  timestamp: 2018-10-24-14-10-02
+  successful: true
+  all_meas_cnt: 2809
+  valid_meas_cnt: 53
+  all_segment_cnt: 27
+  valid_segment_cnt: 20
+  final_cost: 0.002886991633120871
+  average_final_cost: 5.44715402475636e-05
+  this_align_error: 0.1484490493763446
+  default_align_error: 3.130866588041717
+  previous_align_error: 3.130866588041717
+  est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  uncertaity: 0.01805891017322455
+  prev_est_parameter:
+    left: 0.1
+    right: 0.1
+  prev_uncertaity: 0.02
+  comments: "[Success]"
+calib_1:
+  timestamp: 2018-10-24-14-10-02
+  successful: false
+  all_meas_cnt: 1462
+  valid_meas_cnt: 52
+  all_segment_cnt: 14
+  valid_segment_cnt: 10
+  final_cost: 0.002694527151262153
+  average_final_cost: 5.181782983196449e-05
+  this_align_error: 0.0571171049160935
+  default_align_error: 0.07672715639688342
+  previous_align_error: 0.06438223954280586
+  est_parameter:
+    left: 0.1007427882071948
+    right: 0.1007332675788512
+  uncertaity: 0.0240781203057924
+  prev_est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  prev_uncertaity: 0.01805891017322455
+  comments: "[Fail] Covariance is much worse than prevous or average final cost larger than previous."
+calib_2:
+  timestamp: 2018-10-24-14-10-03
+  successful: false
+  all_meas_cnt: 2422
+  valid_meas_cnt: 47
+  all_segment_cnt: 23
+  valid_segment_cnt: 15
+  final_cost: 0.004010068562498074
+  average_final_cost: 8.532060771272497e-05
+  this_align_error: 0.2372064022587344
+  default_align_error: 2.598297254692408
+  previous_align_error: 0.2700170857952174
+  est_parameter:
+    left: 0.1008199420171175
+    right: 0.1009085047291239
+  uncertaity: 0.02284112280542151
+  prev_est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  prev_uncertaity: 0.01805891017322455
+  comments: "[Fail] Covariance is much worse than prevous or average final cost larger than previous."
+calib_3:
+  timestamp: 2018-10-24-14-10-04
+  successful: false
+  all_meas_cnt: 2488
+  valid_meas_cnt: 64
+  all_segment_cnt: 24
+  valid_segment_cnt: 18
+  final_cost: 0.004556497714968594
+  average_final_cost: 7.119527679638427e-05
+  this_align_error: 0.2362398283764409
+  default_align_error: 1.762724905990313
+  previous_align_error: 0.1834044698855184
+  est_parameter:
+    left: 0.1001916011921169
+    right: 0.100292658926859
+  uncertaity: 0.01691292787255014
+  prev_est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  prev_uncertaity: 0.01805891017322455
+  comments: "[Fail] Do Not get satisfied calibrate result for solver."
+calib_4:
+  timestamp: 2018-10-24-14-10-06
+  successful: false
+  all_meas_cnt: 2343
+  valid_meas_cnt: 55
+  all_segment_cnt: 23
+  valid_segment_cnt: 18
+  final_cost: 0.002361488377433558
+  average_final_cost: 4.293615231697378e-05
+  this_align_error: 0.1322983475452084
+  default_align_error: 1.863552091375839
+  previous_align_error: 0.3789204483975215
+  est_parameter:
+    left: 0.1003117824037543
+    right: 0.1005017681133645
+  uncertaity: 0.03021718134013826
+  prev_est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  prev_uncertaity: 0.01805891017322455
+  comments: "[Fail] Covariance is much worse than default."
+calib_5:
+  timestamp: 2018-10-24-14-10-06
+  successful: false
+  all_meas_cnt: 1930
+  valid_meas_cnt: 51
+  all_segment_cnt: 19
+  valid_segment_cnt: 11
+  final_cost: 0.004896458503768226
+  average_final_cost: 9.600899026996522e-05
+  this_align_error: 0.1532715585895797
+  default_align_error: 1.548391463726524
+  previous_align_error: 0.08225127011071615
+  est_parameter:
+    left: 0.09901405850912054
+    right: 0.09915936023655639
+  uncertaity: 0.0189966404110946
+  prev_est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  prev_uncertaity: 0.01805891017322455
+  comments: "[Fail] Do Not get satisfied calibrate result for solver."
+calib_6:
+  timestamp: 2018-10-24-14-10-07
+  successful: false
+  all_meas_cnt: 1411
+  valid_meas_cnt: 42
+  all_segment_cnt: 14
+  valid_segment_cnt: 8
+  final_cost: 0.003540624634545764
+  average_final_cost: 8.43005865368039e-05
+  this_align_error: 0.04732737251912239
+  default_align_error: 0.1262318767104306
+  previous_align_error: 0.0502198640994145
+  est_parameter:
+    left: 0.1011661618800417
+    right: 0.101236368164385
+  uncertaity: 0.02595559803592313
+  prev_est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  prev_uncertaity: 0.01805891017322455
+  comments: "[Fail] Do Not get satisfied calibrate result for solver."
+calib_7:
+  timestamp: 2018-10-24-14-10-07
+  successful: false
+  all_meas_cnt: 1931
+  valid_meas_cnt: 57
+  all_segment_cnt: 19
+  valid_segment_cnt: 15
+  final_cost: 0.003928350608184503
+  average_final_cost: 6.891843172253514e-05
+  this_align_error: 0.1040104574605724
+  default_align_error: 0.8034090509326185
+  previous_align_error: 0.2888682265693198
+  est_parameter:
+    left: 0.1010153793278363
+    right: 0.1010882400407508
+  uncertaity: 0.01574465332666421
+  prev_est_parameter:
+    left: 0.100436577291355
+    right: 0.1005473619958604
+  prev_uncertaity: 0.01805891017322455
+  comments: "[Fail] Covariance is much worse than prevous or average final cost larger than previous."

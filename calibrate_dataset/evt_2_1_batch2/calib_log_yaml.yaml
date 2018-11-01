@@ -1,0 +1,44 @@
+success_calib_cnt: 0
+total_calib_cnt: 2
+calib_0:
+  timestamp: 2018-10-24-15-27-02
+  successful: false
+  all_meas_cnt: 2728
+  valid_meas_cnt: 43
+  all_segment_cnt: 26
+  valid_segment_cnt: 11
+  final_cost: 0.05472966605583198
+  average_final_cost: 0.001272782931530976
+  this_align_error: 7.160014634980431
+  default_align_error: 0
+  previous_align_error: 0
+  est_parameter:
+    left: 0.09304363893728282
+    right: 0.09317851850142322
+  uncertaity: 0.01477991609677829
+  prev_est_parameter:
+    left: 0.1
+    right: 0.1
+  prev_uncertaity: 0.02
+  comments: "[Fail] Do Not get satisfied calibrate result for solver."
+calib_1:
+  timestamp: 2018-10-26-18-07-03
+  successful: false
+  all_meas_cnt: 2728
+  valid_meas_cnt: 43
+  all_segment_cnt: 26
+  valid_segment_cnt: 11
+  final_cost: 0.05472966605583198
+  average_final_cost: 0.001272782931530976
+  this_align_error: 7.160014634980431
+  default_align_error: 0
+  previous_align_error: 0
+  est_parameter:
+    left: 0.09304363893728282
+    right: 0.09317851850142322
+  uncertaity: 0.01477991609677829
+  prev_est_parameter:
+    left: 0.1
+    right: 0.1
+  prev_uncertaity: 0.02
+  comments: "[Fail] Do Not get satisfied calibrate result for solver."
