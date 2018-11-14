@@ -6,7 +6,7 @@ Introduction
 
 This C++ library supports the following tasks:
 
-1. Intrinsic calibration of Loomo GX odometer(radius_left, radius_right).
+1. Intrinsic calibration of differential-driven mobile robot odometer(radius_left, radius_right).
 2. Extrinsic self-calibration of sensor-odometer(3D, delta_x, delta_y, delta_theta).
 
 
