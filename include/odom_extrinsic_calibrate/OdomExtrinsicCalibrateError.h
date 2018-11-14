@@ -5,6 +5,9 @@
 
 using namespace Sophus;
 namespace  odom_calib {
+    Sophus::SE2d vector2SE2(const Eigen::Vector3d &vec);
+    Eigen::Vector3d SE22vector(const Sophus::SE2d &se2);
+
     struct OdomExtrinsicCalibrateFunctor {
         OdomExtrinsicCalibrateFunctor(const Sophus::SE2d& T_C0C1,
                                       const Eigen::Vector2d tick0,

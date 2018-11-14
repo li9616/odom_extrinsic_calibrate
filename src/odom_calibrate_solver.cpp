@@ -2,7 +2,6 @@
 
 #include <iomanip>
 
-#include <odom_extrinsic_calibrate/OdomCalibrateError.h>
 #include <odom_extrinsic_calibrate/odom_integrator.h>
 #include "odom_extrinsic_calibrate/utils.h"
 #include "odom_extrinsic_calibrate/local_parameterization_se2.hpp"

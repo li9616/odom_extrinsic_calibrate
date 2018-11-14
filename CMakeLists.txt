@@ -22,9 +22,6 @@ ${CERES_INCLUDE_DIRS}
 #############
 add_library(${PROJECT_NAME}
       src/calibrate_process.cpp
-      #src/calibrEncoderOnline.cpp
-		src/OdomCalibrateError.cpp
-		src/OdomSensorExtrinsicError.cpp
 		src/OdomExtrinsicCalibrateError.cpp
 		src/odom_calibrate_solver.cpp
 		src/utils.cpp
@@ -51,14 +48,7 @@ ${CERES_LIBRARIES} pthread)
 	 		)
 	 target_link_libraries(testOdomExtrinsicCalibrateError
 	 		${PROJECT_NAME}
-	 		)
-
-	 add_executable(testOdomSensorExtrinsic
-	 		test/testOdomSensorExtrinsic.cpp
-	 		)
-	 target_link_libraries(testOdomSensorExtrinsic
-	 		${PROJECT_NAME}
-	 		)
+	 )	
 
 
      add_executable(testOdomCalibrateExtrinsicSimulation
@@ -68,12 +58,5 @@ ${CERES_LIBRARIES} pthread)
 	 		${PROJECT_NAME}
 	 		)
 
-
-	 add_executable(testOdomSensorExtrinsicSimulation
-	 		test/testOdomSensorExtrinsicSimulation.cpp
-	 		)
-	 target_link_libraries(testOdomSensorExtrinsicSimulation
-	 		${PROJECT_NAME}
-	 		)
 
 

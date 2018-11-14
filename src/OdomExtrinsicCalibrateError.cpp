@@ -3,6 +3,18 @@
 
 using namespace Sophus;
 namespace odom_calib {
+    Sophus::SE2d vector2SE2(const Eigen::Vector3d &vec) {
+        Sophus::SO2d so2d(vec[2]);
+        Sophus::SE2d se2d(so2d, vec.head(2));
+        return se2d;
+    }
+
+    Eigen::Vector3d SE22vector(const Sophus::SE2d &se2) {
+        double angle = atan2(se2.rotationMatrix()(1,0),se2.rotationMatrix()(0,0) );
+        Eigen::Vector3d vec;
+        vec <<  se2.translation(), angle ;
+        return vec;
+    }
     bool OdomExtrinsicCalibrateError::Evaluate(double const *const *parameters,
                                        double *residuals,
                                        double **jacobians) const {

@@ -1,6 +1,5 @@
 #include <iostream>
 #include <ceres/ceres.h>
-#include <odom_extrinsic_calibrate/OdomCalibrateError.h>
 #include <odom_extrinsic_calibrate/NumbDifferentiator.hpp>
 #include <odom_extrinsic_calibrate/utils.h>
 #include <odom_extrinsic_calibrate/odom_calibrate_solver.h>
