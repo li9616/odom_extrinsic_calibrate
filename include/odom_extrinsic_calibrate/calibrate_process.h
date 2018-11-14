@@ -45,7 +45,7 @@ namespace odom_calib{
         // tools
         std::vector<Eigen::Vector3d>
         intergateFullPath(const Eigen::Vector2d& odom_paramter);
-        double compareIntergatedOdomWithVioPose(Eigen::Vector2d& paramter);
+        
     private:
         std::string printCalibrateReport(std::string comments);
         bool loadCalibResult(double *val);

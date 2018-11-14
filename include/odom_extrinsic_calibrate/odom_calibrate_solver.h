@@ -71,7 +71,7 @@ namespace  odom_calib {
         intergateFullPath(const Eigen::Vector2d& odom_paramter);
         bool detectBestEst(CalibrateResult& bestEst);
         void recordTrajectories(std::string path);
-        double compareIntergatedOdomWithVioPose(Eigen::Vector2d& paramter);
+        
         std::string printCalibReport() {
             std::stringstream ss;
             printCalibReport(ss);

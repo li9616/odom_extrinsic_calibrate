@@ -49,8 +49,7 @@ int main(int argc, char** argv) {
         //std::cout<< "add yaw: " << yawItr->ts << std::endl;
     }
 
-    calib_process->getCalibrateResult();
-    calib_process->recordTrajectories("/home/pang/");
+   
     Eigen::Vector2d parameter;
     Eigen::Matrix2d cov;
     calib_process->calibrateOnFullPath(parameter,cov);

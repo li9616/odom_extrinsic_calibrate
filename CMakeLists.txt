@@ -77,7 +77,3 @@ ${CERES_LIBRARIES} pthread)
 	 		)
 
 
-	 add_executable(test_jacobian2 test/test_jacobian2.cpp)
-	 target_link_libraries(test_jacobian2 ${PROJECT_NAME})
-
-
