@@ -36,20 +36,14 @@ namespace odom_calib{
 
         void addEncoderMeas(double ts, double left, double right);
         void addVioPoseMeas(double ts, Pose vioPose);
-        void getCalibrateResult();
-
-        void recordTrajectories(std::string path);
+              
         bool calibrateOnFullPath(Eigen::Vector2d& parameter, Eigen::Matrix2d& cov);
-        void writeCalibrateLogToYaml(bool successful, std::string comments);
-
+        
         // tools
         std::vector<Eigen::Vector3d>
         intergateFullPath(const Eigen::Vector2d& odom_paramter);
-        
     private:
-        std::string printCalibrateReport(std::string comments);
-        bool loadCalibResult(double *val);
-        void saveCalibResult();
+          
         std::shared_ptr<common::Buffer<double,2>> encoderBuffer_;
         std::shared_ptr<std::queue<VioPoseMeas>> vioPoseBuffer_;
         std::shared_ptr<OdomCalibrateSolver> odomCalibrateSolver_;
