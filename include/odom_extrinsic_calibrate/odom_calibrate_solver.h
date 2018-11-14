@@ -69,42 +69,18 @@ namespace  odom_calib {
         bool calibrateOnFullPath(Eigen::Vector2d& parameter, Eigen::Matrix2d& cov);
         std::vector<Eigen::Vector3d>
         intergateFullPath(const Eigen::Vector2d& odom_paramter);
-        bool detectBestEst(CalibrateResult& bestEst);
         void recordTrajectories(std::string path);
         
-        std::string printCalibReport() {
-            std::stringstream ss;
-            printCalibReport(ss);
-            return ss.str();
-        }
-
-        CalibrateResult getBestCalibrateResult();
-
     private:
         ///< calibrate
-        bool solve(const std::vector<MeasPackage>& meas,
-                ceres::Solver::Summary &summary, Eigen::Matrix2d& cov);
-
         bool solveOdomExtrinsic(const std::vector<MeasPackage>& meas,
                    ceres::Solver::Summary &summary, Eigen::Matrix2d& cov);
-
-
-
-        bool isValidSegment(std::vector<MeasPackage> &meas_segment);
-        double evaluateEstimatedOnFullMeasmests(Eigen::Vector2d &est_paramter);
-
-        bool alignTwoTrajectory(std::vector<Eigen::Vector2d> &traj0,
-                                std::vector<Eigen::Vector2d> &traj1,
-                                Eigen::Matrix2d rot, Eigen::Vector2d translation,
-                                double &trans_error);
 
         std::vector<Eigen::Vector2d>
         integrate2Dpositions(Eigen::Vector2d odom_paramter,
                           std::vector<MeasPackage>& full_meas,
                           std::vector<Eigen::Vector2d> *vio_2D_positions = NULL);
-        void printCalibReport(std::ostream &out);
-
-
+        
         int all_segment_cnt_;
         int valid_segment_cnt_;
         std::vector<std::vector<MeasPackage>> valid_segments_;

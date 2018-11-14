@@ -13,12 +13,6 @@ namespace odom_calib{
     class OdomCalibrateSolver;
     struct CalibrateResult;
 
-    std::string timeOfDay();
-
-    std::vector<Eigen::Vector2d>
-    getAllSuccessfulCalibrateFromLog(const std::string log_yaml);
-
-
     template <typename T>
     T interpolateMeasurement(const Time& t, T& before, T& after) {
         T interpolated;
@@ -27,7 +21,6 @@ namespace odom_calib{
         interpolated.meas = (1 - r)* before.meas  + r * after.meas;
         return interpolated;
     }
-
 
     class CalibrateProcess {
     public:
@@ -59,9 +52,6 @@ namespace odom_calib{
         const double kRadiusToRot_ = 2*M_PI / 16384 / 0.4456;
         const double kTickToRotDefault_ = 0.1 * kRadiusToRot_;
 
-        //std::ofstream calib_log_ofs_;
-        std::ofstream calib_log_yaml_ofs_;
-        std::string calib_log_yaml_;
     };
 }
 

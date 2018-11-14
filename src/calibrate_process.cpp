@@ -42,14 +42,6 @@ namespace odom_calib {
 
 
         odomCalibrateSolver_->setPriorEstimate(*priorCalibrateResult_);
-
-        //std::string calib_log_file = calib_file_folder_ + "/calib_log.txt";
-        //calib_log_ofs_.open(calib_log_file, std::ios::out | std::ios::app);
-
-        calib_log_yaml_ = calib_file_folder_ + "/calib_log_yaml.yaml";
-        calib_log_yaml_ofs_.open(calib_log_yaml_,
-                std::fstream::in | std::fstream::out | std::fstream::app);
-        calib_log_yaml_ofs_.close();
     }
 
     CalibrateProcess::~CalibrateProcess() {

@@ -87,10 +87,6 @@ namespace  odom_calib {
         cov = Eigen::Matrix2d::Identity();
         bool success = solveOdomExtrinsic(full_meas_, summary, cov);
         if (success) {
-//            std::cout << "Full path calibrate" << std::endl;
-//            std::cout << summary.BriefReport() << std::endl;
-//            std::cout << "final cast: " << summary.final_cost << std::endl;
-//            std::cout<< "Noised parameter after Opt. " << estimated_paramter_.transpose() << std::endl;
             parameter = estimated_paramter_;
           return true;
         }
